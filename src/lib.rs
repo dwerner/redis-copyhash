@@ -82,7 +82,7 @@ fn set_field(r: &Redis, key: &str, field: &str, val: &str) -> Result<(), CellErr
     }
 }
 
-redis_module!(copy_hash, 1, CH_COPY_HASH_CMD);
+redis_module!("copy_hash", 1, CH_COPY_HASH_CMD);
 
 #[cfg(test)]
 mod tests {
