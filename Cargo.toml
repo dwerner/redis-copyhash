@@ -1,0 +1,14 @@
+[package]
+name = "redis-copyhash"
+version = "0.1.0"
+authors = ["dwerner <dan.werner@gmail.com>"]
+
+[lib]
+crate-type = ["dylib"]
+
+[dependencies]
+#redis-module-sys = { git="https://github.com/dwerner/redis-cell", branch="master"}
+#redis-command-gen = { git="https://github.com/dwerner/redis-cell", branch="master"}
+redis-module-sys = { path="../redis-cell/redis-module-sys"}
+redis-command-gen = { path="../redis-cell/redis-command-gen"}
+libc="0.2"
